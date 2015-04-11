@@ -5,9 +5,6 @@ var lightcurve  = require("./lightcurve");
 var Band = MyBookshelf.Model.extend({
   tableName: "bands",
   hasTimestamps: true,
-  lightcurves: function () {
-    return this.hasMany(lightcurve.model);
-  }
 });
 
 var Bands = MyBookshelf.Collection.extend({

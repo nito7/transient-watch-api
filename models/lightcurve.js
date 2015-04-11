@@ -12,7 +12,7 @@ var Lightcurve = MyBookshelf.Model.extend({
   },
   satellite: function () {
     return this.belongsTo(satellite.model);
-  }
+  },
   band: function () {
     return this.belongsTo(band.model);
   }
