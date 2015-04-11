@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
     if (!exists) {
       return knex.schema.createTable('bands', function(t) {
         t.increments('id').primary();
-        t.string('text', 32);
+        t.string('name', 32);
         t.timestamps();
       });
     } else {

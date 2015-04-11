@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
     if (!exists) {
       return knex.schema.createTable('satellites', function(t) {
         t.increments('id').primary();
-        t.string('text', 64);
+        t.string('name', 64);
         t.timestamps();
       });
     } else {
