@@ -14,9 +14,22 @@ var AstroClasses = MyBookshelf.Collection.extend({
   model: AstroClass
 });
 
+
+
+/*---------- ここにメソッド記述 ----------*/
+
+function index () {
+
+}
+
+
+
+
+/*---------- 公開メソッドの指定 ----------*/
+
 module.exports = {
   model: AstroClass,
   methods: {
-
+    index: index
   }
 }

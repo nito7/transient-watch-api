@@ -14,6 +14,15 @@ var Satellites = MyBookshelf.Collection.extend({
   model: Satellite
 });
 
+
+
+/*---------- ここにメソッド記述 ----------*/
+
+
+
+
+/*---------- 公開メソッドの指定 ----------*/
+
 module.exports = {
   model: Satellite,
   methods: {

@@ -22,6 +22,15 @@ var Lightcurves = MyBookshelf.Collection.extend({
   model: Lightcurve
 });
 
+
+
+/*---------- ここにメソッド記述 ----------*/
+
+
+
+
+/*---------- 公開メソッドの指定 ----------*/
+
 module.exports = {
   model: Lightcurve,
   methods: {

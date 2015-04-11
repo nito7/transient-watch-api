@@ -22,6 +22,15 @@ var AstroObjs = MyBookshelf.Collection.extend({
   model: AstroObj
 });
 
+
+
+/*---------- ここにメソッド記述 ----------*/
+
+
+
+
+/*---------- 公開メソッドの指定 ----------*/
+
 module.exports = {
   model: AstroObj,
   methods: {
