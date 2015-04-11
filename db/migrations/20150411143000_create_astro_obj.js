@@ -8,8 +8,9 @@ exports.up = function(knex, Promise) {
         t.string('name', 128);
         t.float('ra', 7, 3);
         t.float('dec', 7, 3);
-        t.integer('astro_class_id').references('id').inTable('astro_classes');
+        t.integer('astro_class_id').unsigned().notNullable().references('astro_classes.id');
         t.string('link', 2048);
+        t.timestamps();
       });
     } else {
       return new Error("The astro_objs table already exists");

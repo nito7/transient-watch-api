@@ -6,6 +6,7 @@ exports.up = function(knex, Promise) {
       return knex.schema.createTable('bands', function(t) {
         t.increments('id').primary();
         t.string('text', 32);
+        t.timestamps();
       });
     } else {
       return new Error("The bands table already exists");
